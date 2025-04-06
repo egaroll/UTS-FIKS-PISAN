@@ -1,0 +1,62 @@
+/* globals.css */
+
+/* Global styles for body */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* You can add base styles for colors, layout, etc. */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    /* Mobile-specific styles */
+    .navbar .navItem {
+      display: none; /* Hide nav items on mobile */
+    }
+  
+    .menuToggle {
+      display: flex; /* Show hamburger icon */
+    }
+  
+    .mobileNav {
+      display: block; /* Show the mobile nav menu */
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Tablet-specific styles */
+    .navbar .navItem {
+      margin: 0 10px; /* Adjust spacing for tablet */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* Desktop-specific styles */
+    .navbar .navItem {
+      display: block; /* Show nav items on desktop */
+    }
+  
+    .menuToggle {
+      display: none; /* Hide hamburger on desktop */
+    }
+  
+    .mobileNav {
+      display: none; /* Hide mobile nav on desktop */
+    }
+  }
+  
